@@ -16,10 +16,10 @@ jobs:
     - name: show files
       run: ls
     - name: dir
-      run: mkdir build && cd build
+      run: mkdir build
     - name: show files
       run: ls
     - name: cmake
-      run: pwd && ls && cmake
+      run: cd build && cmake ..
     - name: make
       run: cd build && make
