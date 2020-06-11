@@ -17,6 +17,8 @@ jobs:
       run: ls
     - name: dir
       run: mkdir build && cd build
+    - name: show files
+      run: ls
     - name: cmake
       run: cmake ..
     - name: make
