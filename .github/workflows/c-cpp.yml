@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-16.04
 
     steps:
     - uses: actions/checkout@v2
@@ -20,6 +20,6 @@ jobs:
     - name: show files
       run: ls
     - name: cmake
-      run: cmake -B "./build"
+      run: cd build cmake ..
     - name: make
       run: cd build && make
