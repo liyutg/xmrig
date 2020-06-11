@@ -20,6 +20,6 @@ jobs:
     - name: show files
       run: ls
     - name: cmake
-      run: cmake -B "./build"
+      run: cmake -B "./build" -DWITH_HWLOC=OFF
     - name: make
       run: cd build && make
