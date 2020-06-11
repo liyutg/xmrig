@@ -18,7 +18,7 @@ jobs:
     - name: dir
       run: mkdir build
     - name: apt-get 
-      run: apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+      run: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
     - name: show files
       run: ls
     - name: cmake
