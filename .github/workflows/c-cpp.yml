@@ -20,6 +20,6 @@ jobs:
     - name: show files
       run: ls
     - name: cmake
-      run: cmake --build "./build"
+      run: cmake -B "./build"
     - name: make
       run: cd build && make
