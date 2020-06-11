@@ -20,6 +20,6 @@ jobs:
     - name: show files
       run: ls
     - name: cmake
-      run: cmake ..
+      run: pwd && ls && cmake ..
     - name: make
       run: make
