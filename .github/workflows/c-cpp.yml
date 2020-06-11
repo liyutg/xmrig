@@ -20,6 +20,6 @@ jobs:
     - name: show files
       run: ls
     - name: cmake
-      run: cd build && cmake .. -DUV_INCLUDE_DIR=path/to/libuv/include -DUV_LIBRARY=path/to/libuv.a
+      run: cd build && cmake ../
     - name: make
       run: cd build && make
