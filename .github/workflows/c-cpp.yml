@@ -25,7 +25,7 @@ jobs:
       run: cd build && cmake ..
     - name: make
       run: cd build && make
-    - name : Upload artifact
+    - name : Upload artifact -test
       uses: actions/upload-artifact@master
       with:
         name: xmrig
